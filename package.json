@@ -5,12 +5,13 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "test": "mocha --ui tdd || exit 0"
+    "test": "mocha --ui tdd --timeout 10000 || exit 0"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
-    "helmet": "^3.16.0"
+    "helmet": "^3.16.0",
+    "node-fetch": "^2.3.0"
   },
   "engines": {
     "node": "4.4.3"
